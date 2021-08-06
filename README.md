@@ -1,5 +1,9 @@
 # IBM2026
 
 # Build locally
+## Reqs
+- Sphinx
+- Sphinx-autobuild
 
-`sphinx-build -b html source build`
+## Build
+`sphinx-build -b html source build` or `sphinx-autobuild source build`
