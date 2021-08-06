@@ -9,7 +9,9 @@ Welcome to IBM2026 Course
    example-text
    figures
    sample
-
+   directives
+   
+   
 .. toctree::
    :maxdepth: 2
    :caption: Introduction
