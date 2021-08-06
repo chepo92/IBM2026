@@ -16,6 +16,5 @@ Post processing
 Bioprinting 
 ******************************
 
-Practical: 3D printing
-******************************
+
 

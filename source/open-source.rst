@@ -13,6 +13,4 @@ Teamwork and collaborate with git
 **********************************
 
 
-Practical: Github 
-******************************
 
