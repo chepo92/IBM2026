@@ -1,17 +1,18 @@
 # IBM2026
 
-# Auto deploy
-## Just push to main branch, page is in https://chepo92.github.io/IBM2026/
+## Auto deploy
+
+Just push to main branch, page is in https://chepo92.github.io/IBM2026/
 
 
 
-# Contributing
-## Fork & PR
+## Contributing
+Fork, edit & PR, suggested to use standard commits
 
-# Build locally
-## Reqs
+## Build locally
+### Reqs
 - Sphinx
 - Sphinx-autobuild
 
-## Build
+### Build
 `sphinx-build -b html source build` or `sphinx-autobuild source build`
