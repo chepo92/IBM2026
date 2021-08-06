@@ -8,8 +8,9 @@ Just push to main branch, page is in https://chepo92.github.io/IBM2026/
 
 ## Contributing
 Fork, edit & PR, suggested to use standard commits
-sample pages: 
+Based on: 
 - https://coderefinery.github.io/sphinx-lesson/
+
 
 ## Build locally
 ### Reqs
