@@ -10,8 +10,5 @@ DNA assembly
 ******************************
 
 
-Practical on DNA assembly A 
-******************************
 
-Practical on DNA assembly B
-******************************
+
