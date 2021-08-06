@@ -2,4 +2,4 @@
 
 # Build locally
 
-`sphinx-build -b html source build` or  `make html`
+`sphinx-build -b html source build`
