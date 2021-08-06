@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
 
   
   
@@ -35,14 +40,19 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/togglebutton.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Instrumentation integration and automation" href="instrumentation.html" />
-    <link rel="prev" title="CAD design" href="cad-design.html" /> 
+    <link rel="next" title="Practical: molding" href="practice-molds.html" />
+    <link rel="prev" title="Practical: 3D Design and Print" href="practice-3d-dp.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -95,32 +105,43 @@
 <li class="toctree-l1"><a class="reference internal" href="example-text.html">Page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="figures.html">Figures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sample.html">Sample episode in ReST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directives.html">Directives</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="open-source.html">Open source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-github.html">Practical: Github</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Digital fabrication</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="additive-manufacturing.html">Additive Manufacturing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-3dp.html">Practical: 3D printing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subtractive-manufacturing.html">Subtractive manufacturing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cad-design.html">CAD design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-3d-dp.html">Practical: 3D Design and Print</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Molding and casting</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">Molding and casting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#practical-molding">Practical: molding</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="practice-molds.html">Practical: molding</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration and automation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="instrumentation.html">Instrumentation integration and automation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-pumps.html">Practical: Assemble syringe pumps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-openflexure.html">Practical: Open flexure microscope</a></li>
 <li class="toctree-l1"><a class="reference internal" href="microfluidics.html">Microfluidics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-ufluidics.html">Practical: Microfluidics</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Prototyping with biology</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="dna-fabrication.html">DNA fabrication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-dnaassembly-a.html">Practical on DNA assembly A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-dnaassembly-b.html">Practical on DNA assembly B</a></li>
 <li class="toctree-l1"><a class="reference internal" href="in-vitro-biology.html">In vitro biology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-lamp.html">Practical on LAMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-cellfree.html">Practical on cell free fluor and hardware interface</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
@@ -197,9 +218,6 @@
 <div class="section" id="id1">
 <h2>Molding and casting<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="practical-molding">
-<h2>Practical: molding<a class="headerlink" href="#practical-molding" title="Permalink to this headline">¶</a></h2>
-</div>
 </div>
 
 
@@ -208,8 +226,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="instrumentation.html" class="btn btn-neutral float-right" title="Instrumentation integration and automation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="cad-design.html" class="btn btn-neutral float-left" title="CAD design" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="practice-molds.html" class="btn btn-neutral float-right" title="Practical: molding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="practice-3d-dp.html" class="btn btn-neutral float-left" title="Practical: 3D Design and Print" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/mystnb.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_lesson.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
 
   
   
@@ -35,13 +40,19 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/togglebutton.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/minipres.js"></script>
+        <script src="_static/tabs.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="intro.html" />
+    <link rel="next" title="Directives" href="directives.html" />
     <link rel="prev" title="Figures" href="figures.html" /> 
 </head>
 
@@ -105,28 +116,40 @@
 <li class="toctree-l2"><a class="reference internal" href="#see-also">See also</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="directives.html">Directives</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="open-source.html">Open source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-github.html">Practical: Github</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Digital fabrication</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="additive-manufacturing.html">Additive Manufacturing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-3dp.html">Practical: 3D printing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subtractive-manufacturing.html">Subtractive manufacturing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cad-design.html">CAD design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-3d-dp.html">Practical: 3D Design and Print</a></li>
 <li class="toctree-l1"><a class="reference internal" href="molding-casting.html">Molding and casting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-molds.html">Practical: molding</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integration and automation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="instrumentation.html">Instrumentation integration and automation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-pumps.html">Practical: Assemble syringe pumps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-openflexure.html">Practical: Open flexure microscope</a></li>
 <li class="toctree-l1"><a class="reference internal" href="microfluidics.html">Microfluidics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-ufluidics.html">Practical: Microfluidics</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Prototyping with biology</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="dna-fabrication.html">DNA fabrication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-dnaassembly-a.html">Practical on DNA assembly A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-dnaassembly-b.html">Practical on DNA assembly B</a></li>
 <li class="toctree-l1"><a class="reference internal" href="in-vitro-biology.html">In vitro biology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-lamp.html">Practical on LAMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice-cellfree.html">Practical on cell free fluor and hardware interface</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
@@ -200,6 +223,26 @@
             
   <div class="section" id="sample-episode-in-rest">
 <h1>Sample episode in ReST<a class="headerlink" href="#sample-episode-in-rest" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-questions questions admonition">
+<p class="admonition-title">Questions</p>
+<ul class="simple">
+<li><p>How does a typical lesson page look?</p></li>
+<li><p>Questions list questions to get the interest of learners</p></li>
+<li><p>point 2</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+<div class="admonition-objectives objectives admonition">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Show a complete lesson page with all of the most common
+structures.</p></li>
+<li><p>Objectives list what you get out of the page (not just what
+you do)</p></li>
+<li><p>point 2</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
 <p>Topic introduction here</p>
 <p>You really want to browse this page alongside the source of it, to see
 how this is implemented.  See the links at the to right of the page.</p>
@@ -226,15 +269,69 @@ how this is implemented.  See the links at the to right of the page.</p>
 </div>
 </li>
 </ul>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-0-Ug==" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-Ug==" name="Ug==" role="tab" tabindex="-1">R</button></div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bisect</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-Ug==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-Ug==" name="Ug==" role="tabpanel" tabindex="0"><div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">&lt;-</span> <span class="m">1</span> <span class="o">+</span> <span class="m">2</span>
+</pre></div>
+</div>
+</div></div>
 </div>
 <div class="section" id="exercise-the-general-topic">
 <h2>Exercise: the general topic<a class="headerlink" href="#exercise-the-general-topic" title="Permalink to this headline">¶</a></h2>
 <p>Exercises get their own section, so that they can be linked and found
 in the table of contents.</p>
+<div class="admonition-exercise-title exercise important admonition">
+<p class="admonition-title">1.1 Exercise title</p>
+<ol class="arabic simple">
+<li><p>Notice the exercise set has both an ID and
+number <code class="docutils literal notranslate"><span class="pre">SampleLesson-1</span></code> and description of what it contains.</p></li>
+</ol>
+</div>
+<div class="admonition-solution solution important dropdown admonition">
+<p class="admonition-title">Solution</p>
+<ul class="simple">
+<li><p>Solution here.</p></li>
+</ul>
+</div>
+<div class="admonition-create-a-lesson exercise important admonition">
+<p class="admonition-title">1.2 Create a lesson</p>
+<ol class="arabic simple" start="2">
+<li><p>Similarly, each exercise has a quick description title <code class="docutils literal notranslate"><span class="pre">Create</span>
+<span class="pre">a</span> <span class="pre">lesson</span></code> in bold.  These titles are useful so that helpers
+(and learners…) can quickly understand what the point is.</p></li>
+</ol>
+</div>
+<div class="admonition-solution solution important dropdown admonition">
+<p class="admonition-title">Solution</p>
+<ul class="simple">
+<li><p>Solution to that one.</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="another-section">
 <h2>Another section<a class="headerlink" href="#another-section" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-instructor-note instructor-note admonition">
+<p class="admonition-title">Instructor note</p>
+<p>This is an instructor note.  It may be hidden or put to the sidebar
+in a later style.  You should use it for things that the instructor
+should see while teaching, but should be de-emphasized for the
+learners.</p>
+</div>
 <p>These tab synchronize with those above:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-UHl0aG9u" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="0">Python</button><button aria-controls="panel-1-Ug==" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Ug==" name="Ug==" role="tab" tabindex="-1">R</button></div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cmath</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-Ug==" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-Ug==" name="Ug==" role="tabpanel" tabindex="0"><div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">&lt;-</span> <span class="m">10</span> <span class="o">/</span> <span class="m">2</span>
+</pre></div>
+</div>
+</div></div>
 <div class="section" id="a-subsection">
 <h3>A subsection<a class="headerlink" href="#a-subsection" title="Permalink to this headline">¶</a></h3>
 <div class="figure align-default" id="id1">
@@ -269,6 +366,14 @@ it’s accessible to screen readers.</span><a class="headerlink" href="#id2" tit
 <li><p>Upstream information</p></li>
 <li><p>Another course</p></li>
 </ul>
+<div class="admonition-keypoints keypoints admonition">
+<p class="admonition-title">Keypoints</p>
+<ul class="simple">
+<li><p>What the learner should take away</p></li>
+<li><p>point 2</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -278,7 +383,7 @@ it’s accessible to screen readers.</span><a class="headerlink" href="#id2" tit
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="directives.html" class="btn btn-neutral float-right" title="Directives" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="figures.html" class="btn btn-neutral float-left" title="Figures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

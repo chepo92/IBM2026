@@ -9,8 +9,7 @@ Introduction
 Workflow
 ********************
 
-Practical: Microfluidics 
-****************************************
+
 
 
 
